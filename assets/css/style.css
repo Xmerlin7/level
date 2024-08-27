@@ -4,10 +4,31 @@ h1 {
     font-family: var(--font-primary);
     font-weight: var(--font-light);
 }
-.navbar {
-    height: var(--highet-primary);
-}
+@media (min-width: 768px) {
+    .navbar {
+        height: var(--highet-primary);
+    }
+    /*We added level-nav-link to edit the bootstap domination in the 
+        CSS style over the project*/
+    .navbar .level-nav-link.nav-link {
+        transition: background-color 0.2s ease, color 0.4s ease;
+        padding: var(--padding-primary) var(--padding-primary);
+    }
+    .navbar .level-nav-link.nav-link:hover {
+        background-color: var(--color-primary);
+        color: #fff; /* Change text color on hover for better contrast */
+    
+    }
 
-.navbar .nav-link {
-    padding: calc(var(--) * 2);
+}
+.navbar .level-nav-link.nav-link {
+    transition: background-color 0.2s ease, color 0.4s ease;
+    padding-right: var(--padding-primary); /* Specific padding for right */
+    padding-left: var(--padding-primary); /* Specific padding for left */
+
+}
+.navbar .level-nav-link.nav-link:hover {
+    background-color: var(--color-primary);
+    color: #fff; /* Change text color on hover for better contrast */
+
 }
