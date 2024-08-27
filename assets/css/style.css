@@ -7,3 +7,7 @@ h1 {
 .navbar {
     height: var(--highet-primary);
 }
+
+.navbar .nav-link {
+    padding: calc(var(--) * 2);
+}

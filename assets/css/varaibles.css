@@ -6,14 +6,12 @@
     /* COLORS End*/
 
     /* FONTS Start*/
-    --font-primary: "Open Sans",
-                         "Helvetica Neue",
-                          "Arial", "sans-serif";
+    --font-primary: "Open Sans", "Helvetica Neue", "Arial", "sans-serif";
     --font-bold: 700;
     --font-light: 400;
-    --font-size-text: "13px";
-    --font-size-title: "20px";
-    --font-size-section-title: "48px";
+    --font-size-text: 13px; /* Removed quotes */
+    --font-size-title: 20px; /* Removed quotes */
+    --font-size-section-title: 48px; /* Removed quotes */
     /* FONTS End*/
 
     /* SIZE Start*/
@@ -23,7 +21,6 @@
     /* SIZE End*/
 
     /* NAVBAR Start*/
-    --highet-primary: 90px;
-
+    --height-primary: 90px; /* Corrected variable name */
     /* NAVBAR End*/
 }
