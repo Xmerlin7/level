@@ -54,9 +54,17 @@ h1 {
     display: flex;
     align-items: center;
 }
+.form-group .form-control {
+    width: 100%;
+    padding: var(--padding-primary);
+    padding-left: var(--padding-double);
+    border: none;
+    border-bottom: 1px solid var(--color-primary);
+    transition: border-color 1s ease;
+}
 .form-group i {
     color: var(--color-primary);
-    font-size: var(--font-primary);
+    font-size: calc(var(--size-primary) * 1.15);
     position: absolute;
     left: var(--padding-half);
 }
