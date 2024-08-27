@@ -1,24 +1,6 @@
 /* Setting Vatiables */
-:root {
-    /* COLORS Start*/
-    --color-primary: #ee5075;
-    --color-secondary: #111;
-    --color-text: #898989;
-    /* COLORS End*/
 
-    /* FONTS Start*/
-    --font-name-primary: "Open Sans",
-                         "Helvetica Neue",
-                          "Arial", "sans-serif";
-    --font-size-text: "13px";
-    --font-size-title: "20px";
-    --font-size-section-title: "48px";
-    /* FONTS End*/
-
-    /* SIZE Start*/
-    --size-primary: 25px;
-    --margin-primary: var(--size-primary);
-    --padding-primary: var(--size-primary);
-    /* SIZE End*/
-
+h1 {
+    font-family: var(--font-primary);
+    font-weight: var(--font-light);
 }
