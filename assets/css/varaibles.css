@@ -18,6 +18,8 @@
     --size-primary: 25px;
     --margin-primary: var(--size-primary);
     --padding-primary: var(--size-primary);
+    --padding-double: calc(var(--size-primary) * 2);
+    --padding-half: calc(var(--size-primary) / 2);
     /* SIZE End*/
 
     /* NAVBAR Start*/
