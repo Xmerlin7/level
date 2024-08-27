@@ -11,7 +11,7 @@ h1 {
     /*We added level-nav-link to edit the bootstap domination in the 
         CSS style over the project*/
     .navbar .level-nav-link.nav-link {
-        transition: background-color 0.2s ease, color 0.4s ease;
+        transition: background-color 0.2s ease, color 0.5s ease;
         padding: var(--padding-primary) var(--padding-primary);
     }
     .navbar .level-nav-link.nav-link:hover {
@@ -22,7 +22,7 @@ h1 {
 
 }
 .navbar .level-nav-link.nav-link {
-    transition: background-color 0.2s ease, color 0.4s ease;
+    transition: background-color 0.2s ease, color 0.5s ease;
     padding-right: var(--padding-primary); /* Specific padding for right */
     padding-left: var(--padding-primary); /* Specific padding for left */
 
