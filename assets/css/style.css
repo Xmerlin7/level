@@ -50,4 +50,13 @@ h1 {
 }
 .form-group{
     flex: 1 25%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.form-group i {
+    color: var(--color-primary);
+    font-size: var(--font-primary);
+    position: absolute;
+    left: var(--padding-half);
 }
