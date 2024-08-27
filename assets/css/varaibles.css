@@ -22,4 +22,8 @@
     --padding-primary: var(--size-primary);
     /* SIZE End*/
 
+    /* NAVBAR Start*/
+    --highet-primary: 90px;
+
+    /* NAVBAR End*/
 }
