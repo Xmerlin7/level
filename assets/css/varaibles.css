@@ -1,10 +1,19 @@
 /* All needed varaibles */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-primary: #d20031; /* Darker red for dark mode */
+        --color-secondary-light: #aaaaaa; /* Dark background for the button border */
+        --color-primary-dark: #90001a; /* Darker red for hover in dark mode */
+        --color-white: #cccccc; /* Lighter text color for better contrast */
+    }
+}
+
 :root {
     /* COLORS Start*/
     --color-primary: #d20031;
-    --color-primary-dark: #a60027;
+    --color-primary-dark: #90001a;
     --color-secondary-dark: #111;
-    --color-secondary-light: #fff;
+    --color-white:white;
     --color-text: #898989;
     /* COLORS End*/
 

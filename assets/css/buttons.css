@@ -36,17 +36,20 @@
 }
 /* -----------------subscriber button Start------------------- */
 .btn-white {
-    border: 2px solid var(--color-secondary-dark);
-    color: inherit; /* Ensures the text color is white for better visibility */
+    border: 2px solid var(--color-secondary-light);
+    color: var(--color-white); /* Ensures the text color is white */
     background-color: transparent; /* Ensure the button has no background color */
     padding: var(--padding-half) var(--padding-primary);
 }
+
 .btn-white:hover {
-    background-color: var(--color-secondary-dark);
-    color: var(--color-primary);
+    background-color: var(--color-secondary-light);
+    color: var(--color-white);
 }
+
 .btn-white:focus {
     outline: none;
     box-shadow: none;
 }
+
 /* -----------------subscriber button End------------------- */
