@@ -54,7 +54,7 @@
     padding-left: var(--padding-double);
     border: none;
     border-bottom: 1px solid var(--color-primary);
-    transition: border-color 1s ease;
+    transition: border-color 0.5s ease;
 }
 .form-group i {
     color: var(--color-primary);
@@ -65,11 +65,10 @@
 
 .form-control, .form-select {
     outline: none;
-    border: 1px solid #ccc; /* Customize border */
 }
 
 .form-control:focus, .form-select:focus {
     outline: none;
-    border-color: #999; /* Customize focus border color */
+    border-color: var(--color-secondary-dark); /* Customize focus border color */
     box-shadow: none;  /* Remove the blue shadow */
 }

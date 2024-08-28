@@ -2,7 +2,8 @@
 :root {
     /* COLORS Start*/
     --color-primary: #d20031;
-    --color-secondary: #111;
+    --color-secondary-dark: #111;
+    --color-secondary-light: #ffffff;
     --color-text: #898989;
     /* COLORS End*/
 
