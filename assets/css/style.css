@@ -99,6 +99,7 @@
 }
 
 .level-btn.btn-primary:focus {
+    background-color: var(--color-primary-dark); /* gets darker when you press tab to reach it*/
     outline: none; /* Removes the default focus outline */
     box-shadow: none; /* Removes any additional shadow effects */
 }
