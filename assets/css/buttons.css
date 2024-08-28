@@ -1,7 +1,7 @@
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .btn-primary {
-        padding: var(--padding-half) var(--padding-half); /* Custom padding for button */
+        padding: var(--padding-half); /* Custom padding for button */
         font-size: 0.9rem; /* Slightly reduce font size for smaller screens */
     }
 }
@@ -11,12 +11,14 @@
     background-color: var(--color-primary); /* Custom red color */
     color: var(--color-primary-light); /* White text */
     border: none; /* No border */
-    padding: var(--padding-half) var(--padding-primary); /* Custom padding for button */
+    width: 100%;
+    padding: var(--padding-half); /* Custom padding for button */
     border-radius: var(--corner-round-size); /* Rounded corners */
+    font-weight: var(--font-bold); /* Font*/
+    text-transform: uppercase;
+    margin-top: 25px;
     transition: background-color 0.5s ease, transform 0.4s ease; /* Smooth transitions for background color and scale */
     /* Removed fixed positioning */
-    margin-top: 20px; /* Adjust this value to move the button down */
-    margin-left: 50px; /* Adjust this value to move the button to the right */
     display: inline-block; /* Ensures the button's size adjusts based on content */
 }
 
