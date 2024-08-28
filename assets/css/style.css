@@ -25,7 +25,6 @@
 .navbar .level-nav-link.nav-link:hover {
     background-color: var(--color-primary);
     color: #fff; /* Change text color on hover for better contrast */
-
 }
 .hero {
     background: url(../img/backgrpund.jpeg) no-repeat center center /cover;
@@ -49,7 +48,7 @@
     display: flex;
     align-items: center;
 }
-.form-group .form-control {
+.form-group .form-control, .form-select {
     width: 100%;
     padding: var(--padding-primary);
     padding-left: var(--padding-double);
@@ -62,4 +61,15 @@
     font-size: calc(var(--size-primary) * 1.15);
     position: absolute;
     left: var(--padding-half);
+}
+
+.form-control, .form-select {
+    outline: none;
+    border: 1px solid #ccc; /* Customize border */
+}
+
+.form-control:focus, .form-select:focus {
+    outline: none;
+    border-color: #999; /* Customize focus border color */
+    box-shadow: none;  /* Remove the blue shadow */
 }
