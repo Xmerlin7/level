@@ -19,7 +19,7 @@
 
     /* SIZE Start*/
     --size-primary: 25px;
-    --corner-round-size: 4px
+    --corner-round-size: 4px;
     --margin-primary: var(--size-primary);
     --padding-primary: var(--size-primary);
     --padding-double: calc(var(--size-primary) * 2);

@@ -86,7 +86,7 @@
     color: #fff; /* White text */
     border: none; /* No border */
     padding: 12px 24px; /* Custom padding for button */
-    border-radius: 4px; /* Rounded corners */
+    border-radius: var(--corner-round-size); /* Rounded corners */
     transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for background color and scale */
 }
 
