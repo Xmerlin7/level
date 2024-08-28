@@ -82,7 +82,7 @@
 }
 /* Custom Primary Button Styles */
 .btn-primary {
-    background-color: var(--color-primary); /* Custom blue color */
+    background-color: var(--color-primary); /* Custom red color */
     color: #fff; /* White text */
     border: none; /* No border */
     padding: 12px 24px; /* Custom padding for button */
@@ -91,7 +91,7 @@
 }
 
 .btn-primary:hover {
-    background-color: var(--color-primary); /* Darker blue on hover */
+    background-color: var(--color-primary-dark); /* Darker red on hover */
     transform: scale(1.05); /* Slightly enlarge the button on hover */
 }
 
