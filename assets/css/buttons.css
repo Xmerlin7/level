@@ -1,3 +1,12 @@
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .btn-primary {
+        padding: var(--padding-half) var(--padding-half); /* Custom padding for button */
+        font-size: 0.9rem; /* Slightly reduce font size for smaller screens */
+    }
+}
+
+/* Base Button Styles */
 .btn-primary {
     background-color: var(--color-primary); /* Custom red color */
     color: var(--color-primary-light); /* White text */
@@ -5,18 +14,23 @@
     padding: var(--padding-half) var(--padding-primary); /* Custom padding for button */
     border-radius: var(--corner-round-size); /* Rounded corners */
     transition: background-color 0.5s ease, transform 0.4s ease; /* Smooth transitions for background color and scale */
-    position: relative; 
-    left: 80px;
-    top: 20px; /* Moves the button down by 80 pixels */
+    /* Removed fixed positioning */
+    margin-top: 20px; /* Adjust this value to move the button down */
+    margin-left: 50px; /* Adjust this value to move the button to the right */
+    display: inline-block; /* Ensures the button's size adjusts based on content */
 }
 
+/* Button Hover State */
 .btn-primary:hover {
     background-color: var(--color-primary-dark); /* Darker red on hover */
     transform: scale(1.05); /* Slightly enlarge the button on hover */
 }
 
+/* Button Focus State */
 .level-btn.btn-primary:focus {
-    background-color: var(--color-primary-dark); /* gets darker when you press tab to reach it*/
+    background-color: var(--color-primary-dark); /* Darker color when focused */
     outline: none; /* Removes the default focus outline */
     box-shadow: none; /* Removes any additional shadow effects */
 }
+
+
