@@ -1,9 +1,5 @@
 /* Setting Vatiables */
 
-h1 {
-    font-family: var(--font-primary);
-    font-weight: var(--font-light);
-}
 @media (min-width: 768px) {
     .navbar {
         height: var(--highet-primary);
