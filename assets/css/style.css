@@ -71,19 +71,31 @@
 
 .form-control, 
 .form-select {
-    outline: none;
+    outline: none; /* Remove the default outline that browsers add to input/select elements */
 }
 
 .form-control:focus, 
 .form-select:focus {
-    outline: none;
-    border-color: var(--color-secondary); /* Adjusted color variable */
-    box-shadow: none;  /* Remove the blue shadow */
+    outline: none; /* Ensure the outline remains removed even when the element is focused */
+    border-color: var(--color-secondary); /* Change the border color when the element is focused using a custom CSS variable */
+    box-shadow: none;  /* Remove the default blue shadow that appears around the element when focused */
 }
+/* Custom Primary Button Styles */
 .btn-primary {
-    background-color: var(--color-primary); /* Set the button background color */
-    color: white; /* Set the button text color */
-    border: none; /* Remove default border */
-    padding: var(--padding-primary); /* Set uniform padding */
-    transition: background-color 1s ease; /* Smooth transition for background color change */
+    background-color: var(--color-primary); /* Custom blue color */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    padding: 12px 24px; /* Custom padding for button */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for background color and scale */
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary); /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.btn-primary:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5); /* Custom focus ring for accessibility */
 }
