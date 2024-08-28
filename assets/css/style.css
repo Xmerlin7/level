@@ -88,7 +88,9 @@
     padding: var(--padding-half) var(--padding-primary); /* Custom padding for button */
     border-radius: var(--corner-round-size); /* Rounded corners */
     transition: background-color 0.5s ease, transform 0.4s ease; /* Smooth transitions for background color and scale */
-    left: 100px;
+    position: relative; 
+    left: 80px;
+    top: 20px; /* Moves the button down by 80 pixels */
 }
 
 .btn-primary:hover {
