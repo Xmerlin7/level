@@ -1,0 +1,8 @@
+.hero {
+    background: url(../img/backgrpund.jpeg) no-repeat center center /cover;
+    /* Set a background image that doesn't repeat, is centered, and covers the entire hero section */
+    height: 515px; /* Set the height of the hero section */
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically within the hero section */
+    justify-content: center; /* Center items horizontally within the hero section */
+}

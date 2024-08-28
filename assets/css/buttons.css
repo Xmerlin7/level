@@ -1,0 +1,22 @@
+.btn-primary {
+    background-color: var(--color-primary); /* Custom red color */
+    color: var(--color-primary-light); /* White text */
+    border: none; /* No border */
+    padding: var(--padding-half) var(--padding-primary); /* Custom padding for button */
+    border-radius: var(--corner-round-size); /* Rounded corners */
+    transition: background-color 0.5s ease, transform 0.4s ease; /* Smooth transitions for background color and scale */
+    position: relative; 
+    left: 80px;
+    top: 20px; /* Moves the button down by 80 pixels */
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-dark); /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.level-btn.btn-primary:focus {
+    background-color: var(--color-primary-dark); /* gets darker when you press tab to reach it*/
+    outline: none; /* Removes the default focus outline */
+    box-shadow: none; /* Removes any additional shadow effects */
+}

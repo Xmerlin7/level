@@ -1,0 +1,44 @@
+.search-form {
+    background-color: white; /* Set background color to white */
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically within the form */
+    justify-content: center; /* Center items horizontally within the form */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    gap: var(--padding-half); /* Set the gap between form elements */
+    padding: var(--padding-double) var(--padding-half); /* Set padding for the form */
+}
+
+.form-group {
+    flex: 1 25%; /* Flex item that grows and shrinks with a base size of 25% */
+    position: relative; /* Position relative to allow absolute positioning of the icon */
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically within the form group */
+}
+
+.form-group .form-control, 
+.form-group .form-select {
+    width: 100%; /* Make input/select fields take up the full width */
+    padding: var(--padding-primary); /* Set uniform padding */
+    padding-left: var(--padding-double); /* Extra space on the left for the icon */
+    border: none; /* Remove default border */
+    border-bottom: 1px solid var(--color-primary); /* Add a bottom border with a custom color */
+    transition: border-color 0.5s ease; /* Smooth transition for border color change */
+}
+
+.form-group i {
+    color: var(--color-primary); /* Set the icon color */
+    font-size: calc(var(--size-primary) * 1.01); /* Set the icon size slightly larger than the base size */
+    position: absolute; /* Absolutely position the icon within*/
+}
+
+.form-control, 
+.form-select {
+    outline: none; /* Remove the default outline that browsers add to input/select elements */
+}
+
+.form-control:focus, 
+.form-select:focus {
+    outline: none; /* Ensure the outline remains removed even when the element is focused */
+    border-color: var(--color-secondary); /* Change the border color when the element is focused using a custom CSS variable */
+    box-shadow: none;  /* Remove the default blue shadow that appears around the element when focused */
+}

@@ -1,0 +1,28 @@
+@media (min-width: 768px) {
+    /* The styles inside this block will only apply when the screen width is 768px or wider.
+       This is useful for making your design responsive to different screen sizes. */
+    .navbar {
+        height: var(--highet-primary); /* Set the navbar height using a custom CSS variable */
+    }
+    /* We added level-nav-link to override the default Bootstrap styles 
+       in the project and apply custom styles */
+    .navbar .level-nav-link.nav-link {
+        transition: background-color 0.2s ease, color 0.5s ease; /* Smooth transition for background and text color */
+        padding: var(--padding-primary) var(--padding-primary); /* Uniform padding for the navbar links */
+    }
+    .navbar .level-nav-link.nav-link:hover {
+        background-color: var(--color-primary); /* Change background color on hover */
+        color: #fff; /* Change text color to white on hover for better contrast */
+    }
+}
+
+.navbar .level-nav-link.nav-link {
+    transition: background-color 0.2s ease, color 0.5s ease; /* Smooth transition for background and text color */
+    padding-right: var(--padding-primary); /* Specific padding for the right side */
+    padding-left: var(--padding-primary); /* Specific padding for the left side */
+}
+
+.navbar .level-nav-link.nav-link:hover {
+    background-color: var(--color-primary); /* Change background color on hover */
+    color: #fff; /* Change text color to white on hover for better contrast */
+}
