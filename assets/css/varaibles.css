@@ -24,6 +24,7 @@
     --padding-primary: var(--size-primary);
     --padding-double: calc(var(--size-primary) * 2);
     --padding-half: calc(var(--size-primary) / 2);
+    --padding-none: 0px;
     /* SIZE End*/
 
     /* NAVBAR Start*/
