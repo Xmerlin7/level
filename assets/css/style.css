@@ -1,74 +1,89 @@
-
 @media (min-width: 768px) {
+    /* The styles inside this block will only apply when the screen width is 768px or wider.
+       This is useful for making your design responsive to different screen sizes. */
     .navbar {
-        height: var(--highet-primary);
+        height: var(--highet-primary); /* Set the navbar height using a custom CSS variable */
     }
-    /*We added level-nav-link to edit the bootstap domination in the 
-        CSS style over the project*/
+    /* We added level-nav-link to override the default Bootstrap styles 
+       in the project and apply custom styles */
     .navbar .level-nav-link.nav-link {
-        transition: background-color 0.2s ease, color 0.5s ease;
-        padding: var(--padding-primary) var(--padding-primary);
+        transition: background-color 0.2s ease, color 0.5s ease; /* Smooth transition for background and text color */
+        padding: var(--padding-primary) var(--padding-primary); /* Uniform padding for the navbar links */
     }
     .navbar .level-nav-link.nav-link:hover {
-        background-color: var(--color-primary);
-        color: #fff; /* Change text color on hover for better contrast */
-    
+        background-color: var(--color-primary); /* Change background color on hover */
+        color: #fff; /* Change text color to white on hover for better contrast */
     }
-
 }
+
 .navbar .level-nav-link.nav-link {
-    transition: background-color 0.2s ease, color 0.5s ease;
-    padding-right: var(--padding-primary); /* Specific padding for right */
-    padding-left: var(--padding-primary); /* Specific padding for left */
+    transition: background-color 0.2s ease, color 0.5s ease; /* Smooth transition for background and text color */
+    padding-right: var(--padding-primary); /* Specific padding for the right side */
+    padding-left: var(--padding-primary); /* Specific padding for the left side */
+}
 
-}
 .navbar .level-nav-link.nav-link:hover {
-    background-color: var(--color-primary);
-    color: #fff; /* Change text color on hover for better contrast */
+    background-color: var(--color-primary); /* Change background color on hover */
+    color: #fff; /* Change text color to white on hover for better contrast */
 }
+
 .hero {
     background: url(../img/backgrpund.jpeg) no-repeat center center /cover;
-    height:515px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* Set a background image that doesn't repeat, is centered, and covers the entire hero section */
+    height: 515px; /* Set the height of the hero section */
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically within the hero section */
+    justify-content: center; /* Center items horizontally within the hero section */
 }
-.search-form{
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: var(--padding-half);
-    padding: var(--padding-double) var(--padding-half);
+
+.search-form {
+    background-color: white; /* Set background color to white */
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically within the form */
+    justify-content: center; /* Center items horizontally within the form */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    gap: var(--padding-half); /* Set the gap between form elements */
+    padding: var(--padding-double) var(--padding-half); /* Set padding for the form */
 }
-.form-group{
-    flex: 1 25%;
-    position: relative;
-    display: flex;
-    align-items: center;
+
+.form-group {
+    flex: 1 25%; /* Flex item that grows and shrinks with a base size of 25% */
+    position: relative; /* Position relative to allow absolute positioning of the icon */
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically within the form group */
 }
-.form-group .form-control, .form-select {
-    width: 100%;
-    padding: var(--padding-primary);
-    padding-left: var(--padding-double);
-    border: none;
-    border-bottom: 1px solid var(--color-primary);
-    transition: border-color 0.5s ease;
+
+.form-group .form-control, 
+.form-group .form-select {
+    width: 100%; /* Make input/select fields take up the full width */
+    padding: var(--padding-primary); /* Set uniform padding */
+    padding-left: var(--padding-double); /* Extra space on the left for the icon */
+    border: none; /* Remove default border */
+    border-bottom: 1px solid var(--color-primary); /* Add a bottom border with a custom color */
+    transition: border-color 0.5s ease; /* Smooth transition for border color change */
 }
+
 .form-group i {
-    color: var(--color-primary);
-    font-size: calc(var(--size-primary) * 1.15);
-    position: absolute;
-    left: var(--padding-half);
+    color: var(--color-primary); /* Set the icon color */
+    font-size: calc(var(--size-primary) * 1.01); /* Set the icon size slightly larger than the base size */
+    position: absolute; /* Absolutely position the icon within*/
 }
 
-.form-control, .form-select {
+.form-control, 
+.form-select {
     outline: none;
 }
 
-.form-control:focus, .form-select:focus {
+.form-control:focus, 
+.form-select:focus {
     outline: none;
-    border-color: var(--color-secondary-dark); /* Customize focus border color */
+    border-color: var(--color-secondary); /* Adjusted color variable */
     box-shadow: none;  /* Remove the blue shadow */
+}
+.btn-primary {
+    background-color: var(--color-primary); /* Set the button background color */
+    color: white; /* Set the button text color */
+    border: none; /* Remove default border */
+    padding: var(--padding-primary); /* Set uniform padding */
+    transition: background-color 1s ease; /* Smooth transition for background color change */
 }
