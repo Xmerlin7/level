@@ -44,7 +44,7 @@
 
 .btn-white:hover {
     background-color: var(--color-secondary-light);
-    color: var(--color-white);
+    color: white;
 }
 
 .btn-white:focus {

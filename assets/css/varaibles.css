@@ -1,22 +1,24 @@
-/* All needed varaibles */
+/* Dark mode variables */
 @media (prefers-color-scheme: dark) {
     :root {
-        --color-primary: #d20031; /* Darker red for dark mode */
-        --color-secondary-light: #aaaaaa; /* Dark background for the button border */
-        --color-primary-dark: #90001a; /* Darker red for hover in dark mode */
-        --color-white: #cccccc; /* Lighter text color for better contrast */
+        --color-primary: #d20031; /* Primary color remains the same */
+        --color-dark: #1a1a1a; /* Darker background for better contrast */
+        --color-white: #cccccc; /* Lighter text color for dark mode */
+        --color-text: #b0b0b0; /* Lighter text color */
+        --color-secondary-light: #6d6d6d; /* Slightly darker gray for borders */
+        --color-primary-dark: #90001a; /* Darker shade for hover remains the same */
     }
 }
-
 :root {
-    /* COLORS Start*/
-    --color-primary: #d20031;
-    --color-primary-dark: #90001a;
-    --color-secondary-dark: #111;
-    --color-white:white;
-    --color-text: #898989;
-    /* COLORS End*/
-
+    /* COLORS Start */
+    --color-primary: #d20031; /* Primary color */
+    --color-dark: #000000; /* Dark background */
+    --color-white: #ffffff; /* White text */
+    --color-text: #898989; /* Text color */
+    --color-secondary-light: #939393; /* Light gray for borders */
+    --color-primary-dark: #90001a; /* Darker primary color for hover */
+    /* COLORS End */
+    
     /* FONTS Start*/
     --font-primary: "Open Sans", "Helvetica Neue", "Arial", "sans-serif";
     --font-bold: 700;
@@ -46,6 +48,5 @@
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
     /*breakpoint End*/
-
 
 }
