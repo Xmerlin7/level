@@ -83,11 +83,12 @@
 /* Custom Primary Button Styles */
 .btn-primary {
     background-color: var(--color-primary); /* Custom red color */
-    color: #fff; /* White text */
+    color: var(--color-primary-light); /* White text */
     border: none; /* No border */
-    padding: 12px 24px; /* Custom padding for button */
+    padding: var(--padding-half) var(--padding-primary); /* Custom padding for button */
     border-radius: var(--corner-round-size); /* Rounded corners */
     transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for background color and scale */
+    left: 100px;
 }
 
 .btn-primary:hover {
@@ -96,6 +97,6 @@
 }
 
 .btn-primary:focus {
-    outline: none; /* Remove default focus outline */
-    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5); /* Custom focus ring for accessibility */
+    outline: none; /* Removes the default focus outline */
+    box-shadow: none; /* Removes any additional shadow effects */
 }
