@@ -87,7 +87,7 @@
     border: none; /* No border */
     padding: var(--padding-half) var(--padding-primary); /* Custom padding for button */
     border-radius: var(--corner-round-size); /* Rounded corners */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for background color and scale */
+    transition: background-color 0.5s ease, transform 0.4s ease; /* Smooth transitions for background color and scale */
     left: 100px;
 }
 
@@ -96,7 +96,7 @@
     transform: scale(1.05); /* Slightly enlarge the button on hover */
 }
 
-.btn-primary:focus {
+.level-btn.btn-primary:focus {
     outline: none; /* Removes the default focus outline */
     box-shadow: none; /* Removes any additional shadow effects */
 }
