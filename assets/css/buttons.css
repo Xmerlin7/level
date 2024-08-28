@@ -35,6 +35,11 @@
     box-shadow: none; /* Removes any additional shadow effects */
 }
 /* -----------------subscriber button Start------------------- */
+.article {
+    text-align: center;
+    border: 1px solid var(--color-primary);
+    margin-top: 30px; /* Adjust as needed */
+}
 .btn-white {
     border: 2px solid var(--color-secondary-light);
     color: var(--color-white); /* Ensures the text color is white */
