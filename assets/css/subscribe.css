@@ -1,9 +1,18 @@
 section {
+    font-size: 0.8rem;
     padding: var(--padding-double) var(--padding-none);
 }
-.section-color{
+
+.section-color {
     background-color: var(--color-primary);
-    color: white;
+    color: var(--color-secondary-light);
 }
-.sectiom-title{font-size: var(--font-size-section-title);}
-.sectiom-subtitle{font-size: var(--font-size-title);}
+
+.section-title{
+    font-size: var(--font-size-section-title);
+}
+
+.section-subtitle {
+    font-size: var(--font-size-title);
+}
+
