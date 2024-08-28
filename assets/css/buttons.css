@@ -40,11 +40,12 @@
     color: var(--color-white); /* Ensures the text color is white */
     background-color: transparent; /* Ensure the button has no background color */
     padding: var(--padding-half) var(--padding-primary);
+    transition: background-color 0.5s ease, transform 0.4s ease; /* Smooth transitions for background color and scale */
 }
-
 .btn-white:hover {
-    background-color: var(--color-secondary-light);
+    background-color: var(--color-dark);
     color: white;
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
 }
 
 .btn-white:focus {
