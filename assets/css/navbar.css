@@ -17,35 +17,71 @@
 }
 
 .navbar .level-nav-link.nav-link {
-    transition: background-color 0.2s ease, color 0.5s ease, transform 0.2s ease; /* Added transform transition for premium feel */
+    /* Adds smooth transition for background color, text color, and transform changes */
+    transition: background-color 0.2s ease, color 0.5s ease, transform 0.2s ease;
+    
+    /* Adds padding to the right of the navbar link */
     padding-right: var(--padding-primary); 
+    
+    /* Adds padding to the left of the navbar link */
     padding-left: var(--padding-primary); 
-    position: relative; /* For pseudo-elements */
+    
+    /* Positions the element relative to its normal position, required for pseudo-elements to work correctly */
+    position: relative;
 }
 
 .navbar .level-nav-link.nav-link:hover,
 .navbar .level-nav-link.nav-link:focus {
+    /* Changes the background color when the link is hovered over or focused */
     background-color: var(--color-primary); 
+    
+    /* Changes the text color to white for better contrast when hovered or focused */
     color: #fff; 
-    transform: translateY(-2px); /* Slight lift on hover/focus */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    
+    /* Slightly lifts the link upwards by 2px on hover or focus, creating a 3D effect */
+    transform: translateY(-2px); 
+    
+    /* Adds a soft shadow beneath the link to enhance the 3D effect */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .level-nav-link.nav-link::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 100%;
-    background-color: #fff;
-    transform: scaleX(0);
-    transform-origin: right;
+    /* Creates a pseudo-element before the link content */
+    content: ''; 
+    
+    /* Positions the pseudo-element absolutely within the relative-positioned link */
+    position: absolute; 
+    
+    /* Aligns the pseudo-element to the left of the link */
+    left: 0; 
+    
+    /* Positions the pseudo-element at the bottom of the link */
+    bottom: 0; 
+    
+    /* Sets the height of the pseudo-element (e.g., the underline) */
+    height: 2px; 
+    
+    /* Sets the width of the pseudo-element to the full width of the link */
+    width: 100%; 
+    
+    /* Sets the color of the pseudo-element (e.g., the underline) */
+    background-color: #fff; 
+    
+    /* Initially scales the pseudo-element to 0 (hidden) */
+    transform: scaleX(0); 
+    
+    /* Sets the origin of the scaling transformation to the right side of the element */
+    transform-origin: right; 
+    
+    /* Adds a smooth transition effect for the scaling of the pseudo-element */
     transition: transform 0.3s ease;
 }
 
 .navbar .level-nav-link.nav-link:hover::before,
 .navbar .level-nav-link.nav-link:focus::before {
-    transform: scaleX(1);
+    /* Scales the pseudo-element to its full width when the link is hovered over or focused */
+    transform: scaleX(1); 
+    
+    /* Changes the scaling origin to the left side for a smooth expansion effect */
     transform-origin: left;
 }
