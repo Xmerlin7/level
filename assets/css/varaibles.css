@@ -30,6 +30,7 @@
 
     /* SIZE Start*/
     --size-primary: 25px;
+    --size-double: calc(var(--size-primary) * 2);
     --corner-round-size: 4px;
     --margin-primary: var(--size-primary);
     --padding-primary: var(--size-primary);
