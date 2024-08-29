@@ -58,5 +58,13 @@
 /* -----------------Article button Start------------------- */
 .btn-fit:hover{
     width: max-content;
+    background-color: var(--color-primary); /* Darker color when focused */
+}
+.btn-fit:focus,
+.btn-fit:active {
+    outline: none;
+    box-shadow: none;
+    background-color: var(--color-primary); /* Keep the original background color */
+    color: var(--color-primary); /* Keep the original text color */
 }
 /* -----------------Article button End------------------- */
