@@ -9,7 +9,6 @@
 /* Base Button Styles */
 .btn-primary {
     background-color: var(--color-primary); /* Custom red color */
-    color: var(--color-primary-light); /* White text */
     border: none; /* No border */
     width: 100%;
     padding: var(--padding-half); /* Custom padding for button */
