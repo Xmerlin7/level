@@ -5,11 +5,9 @@
     margin-top: 30px; /* Adjust as needed */
     transition: all 0.2s ease-in;
 }
-.article:hover{
+.article:hover, .article:focus{
     scale: 1.05;
     box-shadow: 0 0 7px 0 var(--color-text);
 }
-.article:focus {
-    
-}
+
 /* -----------------Article Section End------------------- */
