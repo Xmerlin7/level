@@ -9,5 +9,8 @@
     scale: 1.05;
     box-shadow: 0 0 7px 0 var(--color-text);
 }
-
+.article .article-icon{
+    font-size: var(--size-double);
+    margin-bottom: 25px;
+}
 /* -----------------Article Section End------------------- */
