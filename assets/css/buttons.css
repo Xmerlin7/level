@@ -57,13 +57,19 @@
 
 /* -----------------Article button Start------------------- */
 .btn-fit:hover{
-    width: max-content;
     background-color: var(--color-primary); /* Darker color when focused */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
 }
-.btn-fit:focus,
-.btn-fit:active {
+.btn-fit:focus{
     background-color: var(--color-primary-dark); /* Darker color when focused */
     outline: none; /* Removes the default focus outline */
     box-shadow: none; /* Removes any additional shadow effects */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
 }
+
+.btn-fit:active{
+    background-color: var(--color-primary); /* Or set to the same color as the default */
+    transform: none; /* No change in size or position */
+
+} 
 /* -----------------Article button End------------------- */
