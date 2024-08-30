@@ -1,3 +1,33 @@
 /* video style Starts */
+/* Container for the video section */
+.video {
+    background: #f0f0f0; /* Light background for contrast */
+    padding: 20px 0; /* Padding around the section */
+    display: flex;
+    justify-content: center; /* Center the video container */
+    align-items: center;
+}
+
+/* Video container styling */
+.video-container {
+    width: 80%; /* Adjust width as needed */
+    max-width: 960px; /* Max width for larger screens */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    overflow: hidden; /* Hide overflow for rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Video styling */
+.level-video {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Match container corners */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+/* Zoom effect on hover */
+.level-video:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
 
 /* video style End */
