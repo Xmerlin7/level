@@ -36,22 +36,37 @@
 /* -----------------subscriber button Start------------------- */
 
 .btn-white {
-    border: 2px solid var(--color-secondary-light);
-    color: var(--color-white); /* Ensures the text color is white */
-    background-color: transparent; /* Ensure the button has no background color */
+    color: var(--color-white); /* White text color */
+    background-color: transparent; /* Transparent background */
     padding: var(--padding-half) var(--padding-primary);
-    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    display: inline-block; /* Ensures button is treated as inline-block */
+    text-align: center; /* Centers text inside the button */
+    border-radius: 5px; /* Slightly rounded corners for a premium look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
+
 .btn-white:hover {
-    background-color: var(--color-dark);
-    color: white;
-    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    background-color: var(--color-dark); /* Dark background on hover */
+    color: var(--color-white); /* White text color */
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for a more premium effect */
 }
 
 .btn-white:focus {
-    outline: none;
-    box-shadow: none;
+    outline: none; /* Removes default focus outline */
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for focus state */
+    transform: scale(1.05); /* Maintains the hover effect on focus */
 }
+
+.btn-white:active {
+    background-color: var(--color-dark); /* Keeps the dark background when active */
+    color: var(--color-white); /* White text color */
+    transform: scale(1); /* Resets the scale to default */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Softer shadow when button is active */
+}
+
+
 
 /* -----------------subscriber button End------------------- */
 
@@ -91,12 +106,10 @@
 /* -----------------Slider button End------------------- */
 
 /* -----------------Commenting button Start------------------- */
-.btn-contact{
-
-
+.btn-contact {
     border: none;
     color: #ffffff;
-    margin-left: 420px;
+    margin-left: 250px;
     margin-bottom: 0;
     transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     display: inline-block; /* Adjusted display to inline-block */
@@ -104,6 +117,19 @@
     width: 30%;
     justify-content: center;
     align-items: center;
-
 }
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .btn-contact {
+        width: 100%; /* Make button full width */
+        margin-left: 0; /* Reset left margin */
+        position: fixed; /* Fix button at the bottom */
+        bottom: 0; /* Align to the bottom */
+        left: 0; /* Align to the left */
+        z-index: 1000; /* Ensure it's above other elements */
+        border-radius: 0; /* Remove border-radius for full-width look */
+    }
+}
+
 /* -----------------Commenting button End------------------- */
