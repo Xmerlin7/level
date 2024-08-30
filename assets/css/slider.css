@@ -1,3 +1,153 @@
 /* Slick Slider Start */
+
+/* Container for the slider with a subtle gradient background */
+.slider-grey {
+    background: linear-gradient(120deg, #f8f9fa, #e9ecef); /* Creates a clean, subtle gradient background */
+    margin-top: 20px;
+    padding: 40px 0; /* Provides balanced vertical padding around the slider */
+    border-radius: 12px; /* Adds slightly rounded corners for a modern look */
+    box-shadow: 0 8px 20px rgba(207, 170, 170, 0.15); /* Applies a softer shadow to enhance the premium feel */
+    overflow: hidden; /* Ensures that no content overflows the container */
+}
+
+/* Container for the slider items */
+.level-slider-items {
+    position: relative; /* Positions the items relative to the container */
+    width: 100%; /* Ensures the slider items take up the full width of the container */
+    height: 400px; /* Sets a fixed height for a consistent slider height */
+    overflow: hidden; /* Hides any overflow content for a cleaner look */
+}
+
+/* Styles for images within the slider items */
+.level-slider-items img {
+    width: 100%; /* Makes the image span the full width of the container */
+    height: 100%; /* Makes the image span the full height of the container */
+    border-radius: 12px; /* Applies consistent rounded corners to images */
+    transition: transform 0.4s ease, filter 0.4s ease; /* Smooth transition effects for hover changes */
+    object-fit: cover; /* Ensures images cover the container without distortion */
+    position: absolute; /* Positions images absolutely within the container */
+}
+
+/* Hover effects for images */
+.level-slider-items img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    filter: brightness(1.2); /* Increases brightness slightly on hover */
+}
+
+/* Container for text within each slider item */
+.level-slider-item-container {
+    position: absolute; /* Positions the text container absolutely within the slider item */
+    bottom: 20px; /* Positions the text container 20px from the bottom */
+    left: 50%; /* Centers the text container horizontally */
+    transform: translateX(-50%); /* Adjusts for exact horizontal centering */
+    color: #ffffff; /* Sets the text color to white for contrast */
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Adds a soft shadow for readability */
+    padding: 25px; /* Provides padding around the text */
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent background for improved text readability */
+    border-radius: 8px; /* Applies rounded corners to the text container */
+}
+
+/* Styles for headings in the text container */
+.level-slider-item-container h3 {
+    font-family: 'Lora', serif; /* Uses an elegant serif font for a premium look */
+    color: #ffffff; /* Sets text color to white for readability */
+    font-size: 24px; /* Increases font size for better readability */
+    margin: 0 0 10px; /* Adds bottom margin to create space below the heading */
+}
+
+/* Styles for paragraphs in the text container */
+.level-slider-item-container p {
+    font-family: 'Roboto', sans-serif; /* Uses a clean sans-serif font */
+    font-size: 16px; /* Sets font size for paragraphs */
+    color: #ffffff; /* Sets text color to white */
+    margin: 0 0 20px; /* Adds bottom margin to create space below the paragraph */
+}
+
+/* Additional spacing for separation between sections */
+.level-slider-item-container > *:not(:last-child) {
+    margin-bottom: 15px; /* Adds space between all child elements except the last one */
+}
+
+
+/* Simplified Arrow Styles */
+.slick-prev, .slick-next {
+    background-color: transparent; /* Transparent background for the arrows */
+    border: 2px solid #ffffff; /* White border for visibility */
+    border-radius: 50%; /* Makes the arrow buttons round */
+    width: 30px; /* Sets the width of the button */
+    height: 30px; /* Sets the height of the button */
+    display: flex; /* Uses flexbox for centering the arrow content */
+    align-items: center; /* Vertically centers the arrow content */
+    justify-content: center; /* Horizontally centers the arrow content */
+    color: #ffffff; /* Sets the arrow color to white */
+    font-size: 16px; /* Sets the font size of the arrows */
+    font-weight: bold; /* Makes the arrows bold */
+    transition: border-color 0.3s ease, color 0.3s ease; /* Smooth transitions for border and color changes */
+    z-index: 1; /* Ensures the arrows are on top of other content */
+    text-indent: -9999px; /* Hides any text inside the button */
+}
+
+/* Positioning for the previous arrow */
+.slick-prev {
+    left: 10px; /* Positions the previous arrow 10px from the left */
+}
+
+/* Positioning for the next arrow */
+.slick-next {
+    right: 10px; /* Positions the next arrow 10px from the right */
+}
+
+/* Styles for the arrow icons */
+.slick-prev:before, .slick-next:before {
+    content: ''; /* No default content */
+    display: inline-block; /* Allows styling of the pseudo-elements */
+    border: solid transparent; /* Creates an arrow using border styles */
+    border-width: 6px 7px; /* Sets the size of the arrow */
+    border-color: transparent transparent #ff0000 transparent; /* Sets the color of the arrow */
+}
+
+/* Arrow color for the next button */
+.slick-next:before {
+    border-width: 6px 7px;
+    border-color: transparent transparent #fd0404 transparent; /* Arrow color for the next button */
+}
+
+/* Highlight arrows on hover */
+.slick-prev:hover, .slick-next:hover {
+    border-color: #f00000; /* Changes border color on hover */
+    color: #ffffff; /* Keeps arrow color white on hover */
+}
+
+/* Enhanced Dots Style */
+.slick-dots {
+    bottom: 20px; /* Positions dots 20px from the bottom */
+}
+
+/* Styles for dots */
+.slick-dots li {
+    margin: 0 8px; /* Increases spacing between dots */
+}
+
+/* Styles for individual dots */
+.slick-dots button {
+    background-color: #ffffff; /* Sets the dot color to white */
+    border: none; /* Removes the border from the dot */
+    border-radius: 50%; /* Makes the dot round */
+    width: 14px; /* Sets the size of the dot */
+    height: 14px; /* Sets the size of the dot */
+    padding: 0; /* Removes any extra padding */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transitions for background and size changes */
+    outline: none; /* Removes default focus outline */
+}
+
+/* No default content for dot buttons */
+.slick-dots button:before {
+    content: ''; /* No default content */
     
-/* Slick Slider End */
+}
+
+/* Styles for active dot */
+.slick-dots .slick-active button {
+    background-color: #b79d9d; /* Changes the background color of the active dot */
+    transform: scale(1.2); /* Slightly enlarges the active dot */
+}
