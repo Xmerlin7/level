@@ -1,4 +1,3 @@
-/* video style Starts */
 /* Container for the video section */
 .video {
     background: #f0f0f0; /* Light background for contrast */
@@ -15,6 +14,7 @@
     border-radius: 10px; /* Rounded corners for a modern look */
     overflow: hidden; /* Hide overflow for rounded corners */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    position: relative; /* Relative positioning for overlay */
 }
 
 /* Video styling */
@@ -29,5 +29,3 @@
 .level-video:hover {
     transform: scale(1.05); /* Slight zoom on hover */
 }
-
-/* video style End */
