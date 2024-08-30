@@ -86,4 +86,18 @@
     
     /* Changes the scaling origin to the left side for a smooth expansion effect */
     transform-origin: left;
+} 
+/* **********LOGO text********* */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-brand h1{
+    margin: 0;
+}
+/*Navigating*/
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 0 0;
 }
