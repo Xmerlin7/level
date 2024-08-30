@@ -27,7 +27,7 @@ Welcome to the Car Agency Website! This dynamic platform offers an elegant and i
 
 2. **Navigate to the Project Directory**:
     ```bash
-    cd car-agency-website
+    cd Level
     ```
 
 3. **Open `index.html`** in your browser and start exploring!
