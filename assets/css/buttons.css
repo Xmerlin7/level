@@ -96,12 +96,12 @@
 
     border: none;
     color: #ffffff;
-    margin-left: 150px;
+    margin-left: 420px;
     margin-bottom: 0;
     transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     display: inline-block; /* Adjusted display to inline-block */
     text-align: center; /* Center-align text inside button */
-    width: 50%;
+    width: 30%;
     justify-content: center;
     align-items: center;
 
