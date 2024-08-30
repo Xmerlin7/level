@@ -29,3 +29,22 @@
 .level-video:hover {
     transform: scale(1.05); /* Slight zoom on hover */
 }
+.video-overlay {
+    position: absolute;
+    background-color: rgb(0 0 0 / 20%);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-control-play,
+ .video-control-pause{
+    color: white;
+    font-size: var(--font-size-section-title);
+    cursor: pointer;
+}
+.video-control-pause{
+    display: none;
+}
