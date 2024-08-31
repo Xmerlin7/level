@@ -1,10 +1,10 @@
 /* Footer container */
 .footer {
-    background-color:  #f0f0f0; /* Dark background for contrast */
-    color: #140f0f; /* White text color */
-    padding: 10px 0; /* Vertical padding */
+    background-color: #343a40; /* Bootstrap dark gray for a professional look */
+    color: #f8f9fa; /* Light text color for contrast */
+    padding: 20px 0; /* Increased padding for better spacing */
     text-align: center; /* Center text */
-    font-size: 20px; /* Slightly smaller font size */
+    font-size: 16px; /* Adjusted font size for readability */
     position: relative;
     bottom: 0;
     width: 100%;
@@ -22,21 +22,33 @@
 .footer-links {
     list-style: none; /* Remove bullets from list */
     padding: 0; /* Remove padding */
-    margin: 10px 0 0; /* Margin for spacing */
+    margin: 15px 0 0; /* Margin for spacing */
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Wrap links on smaller screens */
 }
 
 .footer-links li {
-    margin: 0 10px; /* Spacing between links */
+    margin: 0 15px; /* Increased spacing between links */
 }
 
 .footer-links a {
     color: #f8f9fa; /* Link color */
     text-decoration: none; /* Remove underline */
     transition: color 0.3s ease; /* Smooth color transition */
+    font-weight: 500; /* Slightly bolder text */
 }
 
 .footer-links a:hover {
     color: #adb5bd; /* Lighter color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer {
+        font-size: 14px; /* Smaller font size on mobile */
+    }
+    .footer-links li {
+        margin: 10px; /* Adjust spacing for mobile */
+    }
 }
