@@ -124,7 +124,7 @@
     .btn-contact {
         width: 100%; /* Make button full width */
         margin-left: 0; /* Reset left margin */
-        position: fixed; /* Fix button at the bottom */
+        
         bottom: 0; /* Align to the bottom */
         left: 0; /* Align to the left */
         z-index: 1000; /* Ensure it's above other elements */
